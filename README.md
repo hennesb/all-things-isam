@@ -1,8 +1,8 @@
 # Setting up an ISAM development lab
 This repo contains the bare minimum needed to start up an ISAM docker webseal instance using a Trial licence.
 Once the licence agreements are accepted and applied , the ansible script supplied with this repo configures
-a runtime based on an embedded ldap and configures a test junction. The junction at this point is configured with
-a machine specific host ( for macOS ). 
+a runtime based on an embedded ldap, a default webseal instance and configures a test junction. 
+The junction at this point is configured with a docker platform specific host.
 
 ## Docker Directory
 The docker directory contains the following files
