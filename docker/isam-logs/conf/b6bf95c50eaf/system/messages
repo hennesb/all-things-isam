@@ -1,0 +1,122 @@
+May 13 20:02:32 mesa_syslogd[287]: Watchdog started
+May 13 20:02:32 mesa_syslogd[287]: Child process started (pid=289)
+May 13 20:02:32 mesa_syslogd[289]: Started
+May 13 20:02:32 mesa_syslogd[289]: Loading config
+May 13 20:02:32 mesa_syslogd[289]: Ready
+May 13 20:02:32 mesa_syslogd[289]: Warning: Unable to attach to eventsd; event reporting temporarily disabled
+May 13 20:02:33 mesa_control[288]: No legacy published snapshots found.
+May 13 20:02:33 mesa_control[288]: No published configuration detected.
+May 13 20:02:33 mesa_config[301]: Signature verification passed for file: /usr/sbin/mesa_config
+May 13 20:02:33 mesa_config[301]: Error: DPWAP0072E   The key database, rt_profile_keys, does not exist.
+May 13 20:02:34 mesa_config[302]: Signature verification passed for file: /usr/sbin/mesa_config
+May 13 20:02:44 mesa_config[439]: Last message repeated 5 times
+May 13 20:02:44 mesa_config[439]: Error: DPWAP0072E   The key database, lmi_trust_store, does not exist.
+May 13 20:02:45 mesa_config[441]: Signature verification passed for file: /usr/sbin/mesa_config
+May 13 20:02:55 mesa_config[576]: Last message repeated 5 times
+May 13 20:02:55 mesa_config[576]: Error: DPWAP0072E   The key database, embedded_ldap_keys, does not exist.
+May 13 20:02:56 mesa_config[577]: Signature verification passed for file: /usr/sbin/mesa_config
+May 13 20:03:06 mesa_config[729]: Last message repeated 5 times
+May 13 20:03:07 mesa_control[738]: Bootstrapping from last known good policies
+May 13 20:03:07 mesa_control[738]: Adapting policy dir=/etc/policies/
+May 13 20:03:07 mesa_control[738]: Adapt policy succeeded
+May 13 20:03:07 mesa_control[738]: Translating policy dir=/etc/policies/ out=/etc/settings.tmp
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/mesa/addr_geo/addr_geo1_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/mesa/addr_host/addr_host2_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/mesa/addr_mask/addr_mask2_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/mesa/addr_range/addr_range2_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/mesa/address_collection/address_collection2_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/mesa/responses/email/email2_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: Last message repeated 1 times
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/mesa/responses/logdb/logdb2_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: Last message repeated 1 times
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/mesa/responses/rsyslog/rsyslog2_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: Last message repeated 1 times
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/mesa/responses/snmp/snmp2_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: Last message repeated 1 times
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/common/authdb/authdb4_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/common/authorization/authorization3_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/common/felb/felb6_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/common/hosts/hosts3_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/common/lmi/lmi2_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/common/snmpd/snmpd2_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/common/sysaccount/sysaccount2_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/isam/activation/activation3_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/isam/cluster/cluster7_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/isam/dsc/dsc1_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/isam/locale/locale1_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/isam/rsyslog_forwarder/rsyslog_forwarder1_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/mesa/events/events2_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/mga/runtime_profile/runtime_profile13_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/mga/runtime_profile/runtime_endpoints2_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/mesa/gw_net/gw_net1_2_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/mesa/local_admin_configuration/local_admin_configuration4_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/mesa/system_alerts/system_alerts2_0_0.xml] validate passed
+May 13 20:03:07 mesa_translate[744]: XML Schema for [/etc/policies//cml/mesa/device_params/device_params2_0_0.xml] validate passed
+May 13 20:03:07 mesa_control[738]: Translate policy succeeded
+May 13 20:03:07 mesa_control[738]: Bootstrapping from settings
+May 13 20:03:08 mesa_config[748]: Signature verification passed for file: /usr/sbin/mesa_config
+May 13 20:03:08 mesa_config[748]: Bootstrapping
+May 13 20:03:08 mesa_config[748]: Enabling /etc/marker.custom.appliance_info.show by creating marker file.
+May 13 20:03:08 mesa_config[748]: Enabling /etc/marker.custom.cli.logs by creating marker file.
+May 13 20:03:08 mesa_config[748]: Error: Could not open the key database.
+May 13 20:03:08 mesa_config[748]: Hostname set to isam-conf
+May 13 20:03:08 mesa_config[748]: Setting kernel log level: 1
+May 13 20:03:08 mesa_config[748]: Setting maximum number of core files: 3
+May 13 20:03:08 mesa_eventsd: Dropping the queue size from 1000 to 10 due to system restrictions.
+May 13 20:03:08 mesa_eventsd_watchdog[759]: Watchdog started
+May 13 20:03:08 mesa_config[748]: Trying to start daemon: mesa_syslogd
+May 13 20:03:08 mesa_eventsd_watchdog[759]: Child process started (pid=760)
+May 13 20:03:08 mesa_eventsd[760]: Started
+May 13 20:03:08 mesa_eventsd[760]: Loading config
+May 13 20:03:08 mesa_eventsd[760]: Ready
+May 13 20:03:08 mesa_config[748]: Daemon already started but command line changed: mesa_syslogd
+May 13 20:03:08 mesa_syslogd[287]: Watchdog exiting on SIGTERM (sent by 748), terminating child
+May 13 20:03:08 mesa_config[748]: Trying to stop daemon: mesa_syslogd_watchdog
+May 13 20:03:08 mesa_config[748]: Sending SIGTERM to daemon: mesa_syslogd_watchdog (pid 287)
+May 13 20:03:08 mesa_syslogd[289]: Received SIGTERM, exiting
+May 13 20:03:08 mesa_syslogd[289]: Shutting down
+May 13 20:03:08 mesa_syslogd[778]: Watchdog started
+May 13 20:03:08 mesa_syslogd[778]: Child process started (pid=779)
+May 13 20:03:08 mesa_syslogd[779]: Started
+May 13 20:03:08 mesa_syslogd[779]: Loading config
+May 13 20:03:08 mesa_syslogd[779]: Ready
+May 13 20:03:08 mesa_syslogd[779]: Attached to eventsd; event reporting enabled
+May 13 20:03:08 mesa_config[748]: XML Schema for [/etc/policies//cml/common/authorization/authorization3_0_0.xml] validate passed
+May 13 20:03:08 mesa_config[748]: GLGSY9025I:: GLG_events:: |component=mesa_config|
+May 13 20:03:11 mesa_config[748]: GLGSY9029I:: GLG_events:: ||
+May 13 20:03:11 mesa_config[748]: FIPS Checksum Results: Success(1747), Modified(0), Missing(0), Errors(0)
+May 13 20:03:11 mesa_config[748]: Creating certificate database /opt/IBM/wlp/usr/servers/default/certs/lmi.db in FIPS mode
+May 13 20:03:11 mesa_config[748]: Creating default lmi certificate for isam-conf in FIPS mode
+May 13 20:03:14 mesa_config[830]: Signature verification passed for file: /usr/sbin/mesa_config
+May 13 20:03:15 mesa_config[835]: Last message repeated 1 times
+May 13 20:03:18 mesa_config[748]: Starting App Server
+May 13 20:03:18 su: (to www-data) root on none
+May 13 20:03:33 mesa_config[1070]: Signature verification passed for file: /usr/sbin/mesa_config
+May 13 20:03:33 mesa_config[1074]: Last message repeated 1 times
+May 13 20:03:33 mesa_config[748]: Component Liberty enabled FIPS mode.
+May 13 20:03:33 mesa_config[748]: Reading /proc/provhwinfo
+May 13 20:03:33 mesa_config[748]: Creating LUM host file for virtual/generic system: /etc/lum/host-info
+May 13 20:03:33 mesa_config[748]: host-info model: AMV 5100
+May 13 20:03:33 mesa_config[748]: host-info serial: c110a82a-03cf-4f3a-ad8c-5006c6199ee9
+May 13 20:03:33 mesa_config[748]: Executing: sed -i -e 's/^host_type.*/host_type	=S	v;/' /etc/lum/UpdateTypeNames.config
+May 13 20:03:33 mesa_config[748]: Prepopulating update history after firmware update
+May 13 20:03:33 mesa_config[748]: Writing /etc/lum/update-history.yaml
+May 13 20:03:33 mesa_config[748]: Starting iss-lum
+May 13 20:03:33 mesa_config[748]: Checking for automatic PAM update after firmware update
+May 13 20:03:33 iss-lum[1105]: Component LUM enabled FIPS mode.
+May 13 20:03:33 iss-lum[1105]: Notice: Component LUM enabled FIPS mode.
+May 13 20:03:34 iss-lum[1105]: Started thread '_asThread-instance' with ID 140477765064448
+May 13 20:03:34 iss-lum[1105]: Started thread 'LumTaskThread' with ID 140477756671744
+May 13 20:03:34 iss-lum[1105]: Started thread 'UpdateServicesThread' with ID 140477748279040
+May 13 20:03:34 rsyslogd:  [origin software="rsyslogd" swVersion="8.24.0-41.el7_7.2" x-pid="1114" x-info="http://www.rsyslog.com"] start
+May 13 20:03:34 mesa_config[748]: XML Schema for [/etc/policies//cml/common/sysaccount/sysaccount2_0_0.xml] validate passed
+May 13 20:03:34 mesa_control[738]: Bootstrap from settings succeeded
+May 13 20:03:34 mesa_control[738]: GLGSY0015I:: GLG_events:: ||
+May 13 20:03:34 mesa_control[738]: Bootstrap succeeded
+May 13 20:03:35 mesa_config[1129]: Signature verification passed for file: /usr/sbin/mesa_config
+May 13 20:03:35 mesa_control[738]: Policy changes have been kept.
+May 13 20:03:35 rsyslogd: rsyslogd's userid changed to 6000
+May 13 20:04:07 mesa_config[1235]: Signature verification passed for file: /usr/sbin/mesa_config
+May 13 20:04:10 mesa_config[1254]: Last message repeated 4 times
+May 13 20:05:01 crond[1403]: pam_systemd(crond:session): Failed to connect to system bus: No such file or directory
+May 13 20:10:01 crond[2190]: pam_systemd(crond:session): Failed to connect to system bus: No such file or directory
