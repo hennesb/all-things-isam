@@ -14,7 +14,7 @@ The docker directory contains the following files
 
 ## Getting Started
 1. Navigate to the docker directory and run `./start-isam.sh`
-2. This should start the ISAM configuration appliance
+2. This should start the ISAM configuration appliance, found at [https://localhost:9443/core/login](https://localhost:9443/core/login)
 ![ISAM Login Page](/images/isam-login.png )
 
  
