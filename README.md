@@ -16,7 +16,7 @@ The docker directory contains the following files
 
 
 ## Ansible directory
-- ***apply-config.sh*** This shell runs the ansible playbook to configure the appliance and co-ordinates container restarts. It depends on the IBM [isam ansible roles] https://github.com/IBM-Security/isam-ansible-roles) and downloads and places the roles in a /tmp directory. 
+- ***apply-config.sh*** This shell runs the ansible playbook to configure the appliance and co-ordinates container restarts. It depends on the IBM [isam ansible roles](https://github.com/IBM-Security/isam-ansible-roles) and downloads and places the roles in a /tmp directory. 
 - ***accept_agreement.json*** JSON for accepting the licence agreement. Not really needed for this as the Trial version requires some
 manual configuration but might be useful for non Trial versions of the product.
 - ***runtime-config.json*** The configuration needed to use the embedded ldap for the runtime config.
