@@ -10,8 +10,8 @@ services:
       - SERVICE=config
       - CONTAINER_TIMEZONE=${TIMEZONE}
     volumes:
-      - ./isam-volume:/var/shared
-      - ./isam-logs/conf:/var/application.logs
+      - /tmp/isam-dev-lab/isam-volume:/var/shared
+      - /tmp/isam-dev-lab/isam-logs/conf:/var/application.logs
     ports:
       - ${CONFIG_HTTPS_PORT}:9443
     cap_add:
@@ -26,8 +26,8 @@ services:
       - INSTANCE=${WEBSEAL_INSTANCE_NAME}
       - CONTAINER_TIMEZONE=${TIMEZONE}
     volumes:
-      - ./isam-volume:/var/shared
-      - ./isam-logs/webseal:/var/application.logs
+      - /tmp/isam-dev-lab/isam-volume:/var/shared
+      - /tmp/isam-dev-lab/isam-logs/webseal:/var/application.logs
     ports:
       - "${WEBSEAL_HTTPS_PORT}:443"
       - "${WEBSEAL_HTTP_PORT}:80"

@@ -1,0 +1,5 @@
+{
+    "user_registry":"local",
+    "admin_cert_lifetime":"365",
+    "admin_pwd":"admin"
+}

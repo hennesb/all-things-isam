@@ -1,5 +1,7 @@
 # Setting up an ISAM development lab
 This repo contains the bare minimum needed to start up an ISAM docker webseal instance using a Trial licence.
+I left passwords in plaintext for ease of install , I recommend you change these values or customize this
+script to use ansible vault or your own secrets management solution.
 Once the licence agreements are accepted and applied , the ansible script supplied with this repo configures
 a runtime based on an embedded ldap, a default webseal instance and configures a test junction. 
 The junction at this point is configured with a docker platform specific host.
@@ -12,11 +14,22 @@ The docker directory contains the following files
  - **clear-down-environment.sh** , stops and removes the ISAM containers and clears down the shared volumes. Please be aware that 
    this will remove any ISAM config you've applied not performed through the ansible playbook.
 
+
+## Ansible directory
+- ***apply-config.sh*** This shell runs the ansible playbook to configure the appliance and co-ordinates container restarts. It depends on the IBM [isam ansible roles] (https://github.com/IBM-Security/isam-ansible-roles) and downloads and places the roles in a /tmp directory. 
+- ***accept_agreement.json** JSON for accepting the licence agreement. Not really needed for this as the Trial version requires some
+manual configuration but might be useful for non Trial versions of the product.
+- ***runtime-config.json*** The configuration needed to use the embedded ldap for the runtime config.
+
 ## Getting Started
-1. Navigate to the docker directory and run `./start-isam.sh`
-2. This should start the ISAM configuration appliance, found at [https://localhost:9443/core/login](https://localhost:9443/core/login). The default username is ***admin*** and password is ***admin***. 
+1. Security Access Manager protects applications , I've used this as sample [application](https://github.com/spring-guides/gs-spring-boot/tree/master/complete) to sit behind the reverse proxy. This runs on localhost on my host machine (not a docker container) on port 8080.
+2. Start the ISAM containers . Navigate to the docker directory and run `./start-isam.sh`
+3. This should start the ISAM configuration appliance, found at [https://localhost:9443/core/login](https://localhost:9443/core/login). The default username is ***admin*** and password is ***admin***. It also starts a webseal container but that remains in an unhealthy state until the configuration container publishes the reverse proxy config to the shared volumes. 
 ![ISAM Login Page](/images/isam-login.png )
-3. 
+4. You'll need to download a Trial licence from IBM and activate it within the appliance.
+   IBM have a good [YouTube video (https://youtu.be/2gmlr8sjkkE) on this.
+5. Once you've completed the initial setup , navigate to the ansible directory. Run the `./apply-config.sh` , it will configure a runtime    environment using an embedded ldap, create a default reverse proxy , create a test junction connecting to the host:8080 and publish the config . Once the webseal container receives that config the script restarts the ISAM configuration container.
+6. Navigate to https://localhost/isam-test , you should receive the ISAM login page,  use the sec_master user and credentials to login and it should take you to the Spring boot 
 
  
 
