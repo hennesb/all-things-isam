@@ -1,0 +1,23 @@
+version: '3'
+services:
+#
+# Security Access Manager Containers
+#
+  isam-webseal:
+    image: ibmcom/isam:9.0.7.1_IF4
+    hostname: isam-webseal
+    environment:
+      - SERVICE=webseal
+      - INSTANCE=${WEBSEAL_INSTANCE_NAME}
+      - CONTAINER_TIMEZONE=${TIMEZONE}
+    volumes:
+      - /tmp/isam-dev-lab/isam-volume:/var/shared
+      - /tmp/isam-dev-lab/isam-logs/webseal:/var/application.logs
+    ports:
+      - "${WEBSEAL_HTTPS_PORT}:443"
+      - "${WEBSEAL_HTTP_PORT}:80"
+    cap_add:
+      - SYS_PTRACE
+      - SYS_RESOURCE
+
+

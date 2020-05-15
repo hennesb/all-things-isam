@@ -1,0 +1,21 @@
+version: '3'
+services:
+#
+# Security Access Manager Containers
+#
+  isam-config:
+    image: ibmcom/isam:9.0.7.1_IF4
+    hostname: isam-conf
+    environment:
+      - SERVICE=config
+      - CONTAINER_TIMEZONE=${TIMEZONE}
+    volumes:
+      - /tmp/isam-dev-lab/isam-volume:/var/shared
+      - /tmp/isam-dev-lab/isam-logs/conf:/var/application.logs
+    ports:
+      - ${CONFIG_HTTPS_PORT}:9443
+    cap_add:
+      - SYS_PTRACE
+      - SYS_RESOURCE
+
+

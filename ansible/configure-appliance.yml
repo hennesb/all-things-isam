@@ -21,30 +21,6 @@
 
   pre_tasks:
     - uri:
-        url: https://localhost:9443/setup_service_agreements/accepted
-        user: "{{username}}"
-        password: "{{password}}"
-        method: PUT
-        status_code: 200
-        force_basic_auth: yes
-        body_format: json
-        body: "{{ lookup('file','accept_agreement.json') }}"
-        validate_certs: no
-        headers:
-          Accept: "application/json"
-
-    - uri:
-        url: https://localhost:9443/setup_complete
-        user: "{{username}}"
-        password: "{{password}}"
-        method: PUT
-        status_code: 200
-        force_basic_auth: yes
-        validate_certs: no
-        headers:
-          Accept: "application/json"
-
-    - uri:
         url: https://localhost:9443/isam/runtime_components
         user: "{{username}}"
         password: "{{password}}"

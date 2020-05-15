@@ -1,5 +1,10 @@
 {
-    "user_registry":"local",
-    "admin_cert_lifetime":"365",
-    "admin_pwd":"admin"
+    "user_registry":"ldap",
+    "admin_pwd":"admin",
+    "ldap_host":"isam-ldap",
+    "ldap_port":"389",
+    "ldap_dn":"cn=root,secAuthority=Default",
+    "ldap_pwd":"admin",
+    "admin_cert_lifetime" : "365",
+    "domain":"Default"
 }
