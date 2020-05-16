@@ -22,7 +22,7 @@ manual configuration but might be useful for non Trial versions of the product.
 ## Getting Started
 1. Security Access Manager protects applications , I've used this as sample [application](https://github.com/spring-guides/gs-spring-boot/tree/master/complete) to sit behind the reverse proxy. This runs on localhost on my host machine (not a docker container) on port 8080.
 
-[![Part 1](/images/thumbnail.png)](https://youtu.be/chhJCSivNnM)
+[![Part 1](/images/thumbnail.png)](https://youtu.be/chhJCSivNnM)]
 
 
 2. Start the ISAM containers . Navigate to the docker directory and run `./start-isam.sh`
