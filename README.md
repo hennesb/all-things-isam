@@ -3,6 +3,27 @@ This repository contains instructions to standup an IBM security access manager 
 Trial licence acceptance manually through the LMI but the runtime and reverse proxy configuration is performed using 
 the IBM ISAM ansible roles.
 
+<aside class="warning">
+I use a default passwords in this demo lab. All passwords are admin.
+Appliance => admin:admin
+LDAP =>  cn=root, secAuthority=Default : admin
+Policy Manager => sec_master : admin
+</aside>
+
+
+
+
+## Before you start
+- Ensure docker is installed
+- The scripts and docker-compose file require access to write to the /tmp directory
+
+<aside class="notice">
+This setup for the moment only works with MacOS, Linux version coming soon. But if you want to make it more platform specific change the configure-appliance.yml
+entry
+`add_junction_server_hostname: 'docker.for.mac.host.internal'`
+to your hostname
+
+</aside>
 
 ## Docker Directory
 The docker directory contains the following files
@@ -14,7 +35,7 @@ The docker directory contains the following files
 
 
 ## Ansible directory
-- ***apply-config.sh*** This shell runs the ansible playbook to configure the appliance and co-ordinates container restarts. It depends on the IBM [isam ansible roles](https://github.com/IBM-Security/isam-ansible-roles) and downloads and places the roles in a /tmp directory. 
+- ***apply-config.sh*** This shell installs the ISAM ansible roles, runs the ansible playbook to configure the appliance and waits for the webseal container to receive the config published from the LMI. 
 - ***accept_agreement.json*** JSON for accepting the licence agreement. Not really needed for this as the Trial version requires some
 manual configuration but might be useful for non Trial versions of the product.
 - ***runtime-config.json*** The configuration needed to use the embedded ldap for the runtime config.
