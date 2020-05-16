@@ -18,6 +18,7 @@
     add_junction_reverseproxy_id: 'default'
     add_junction_server_hostname: 'docker.for.mac.host.internal'
     add_junction_server_port: '8080'
+    add_junction_remote_http_header : 'all'
 
   pre_tasks:
     - uri:
