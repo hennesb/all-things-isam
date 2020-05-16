@@ -4,10 +4,8 @@ Trial licence acceptance manually through the LMI but the runtime and reverse pr
 the IBM ISAM ansible roles.
 
 <aside class="warning">
-I use a default passwords in this demo lab. All passwords are admin.
-Appliance => admin:admin
-LDAP =>  cn=root, secAuthority=Default : admin
-Policy Manager => sec_master : admin
+I use a default passwords in this demo lab and LDAP is running on a plaintext port of 389. All passwords are admin. Usual warnings , please change these for your environment. 
+
 </aside>
 
 
@@ -18,10 +16,7 @@ Policy Manager => sec_master : admin
 - The scripts and docker-compose file require access to write to the /tmp directory
 
 <aside class="notice">
-This setup for the moment only works with MacOS, Linux version coming soon. But if you want to make it more platform specific change the configure-appliance.yml
-entry
-`add_junction_server_hostname: 'docker.for.mac.host.internal'`
-to your hostname
+This setup for the moment only works with MacOS, Linux version coming soon. 
 
 </aside>
 
