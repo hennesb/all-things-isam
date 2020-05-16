@@ -31,15 +31,21 @@ manual configuration but might be useful for non Trial versions of the product.
 
 
 3. This should start the ISAM configuration appliance [login page ](https://localhost:9443/core/login). The default username is ***admin*** and password is ***admin***. It also starts a webseal container but that remains in an unhealthy state until the configuration container publishes the reverse proxy config to the shared volumes. You'll need to download a Trial licence from IBM and activate it within the appliance. IBM have a good [YouTube video](https://youtu.be/2gmlr8sjkkE) on this but the video below shows the steps needed once you have the licence certificate.
-![ISAM Login Page]()
 [![Step 3](/images/isam-login.png )](https://youtu.be/DDjX1yKlc7I "Step 3")
 
 
-4. Once you've completed the initial setup , navigate to the ansible directory. Run the `./apply-config.sh` , 
-[![Step 3](https://res.cloudinary.com/dnrfrgcar/image/upload/v1589637467/Screenshot_2020-05-16_at_14.57.18_hv94bz.png)](https://youtu.be/gIDX8AkmT_A "Step 3")
-it will configure a runtime    environment using an embedded ldap, create a default reverse proxy , create a test junction connecting to the host:8080 and publish the config . Once the webseal container receives that config the script restarts the ISAM configuration container.
+4. Once you've completed the initial setup , navigate to the ansible directory. Run the `./apply-config.sh` 
+   Using the ISAM ansible roles this step
+    - configures a runtime environment with the openldap registry
+    - configures a reverse proxy called default
+    - adds a junction to our application started in Step 1
 
-5. Navigate to https://localhost/isam-test , you should receive the ISAM login page,  use the sec_master user and credentials to login and it should take you to the Spring boot 
+[![Step 4](https://res.cloudinary.com/dnrfrgcar/image/upload/v1589637467/Screenshot_2020-05-16_at_14.57.18_hv94bz.png)](https://youtu.be/kne8zdncOsw "Step 4")
+
+
+5. Navigate to https://localhost/isam-test , you should receive the ISAM login page,  use the sec_master user and credentials to login and it should take you to the Spring boot.  
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3xUtH6UcyIA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
  
 
