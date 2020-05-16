@@ -36,7 +36,7 @@ manual configuration but might be useful for non Trial versions of the product.
 - ***runtime-config.json*** The configuration needed to use the embedded ldap for the runtime config.
 
 ## Getting Started
-1. Security Access Manager protects applications , I've used this as sample [application](https://github.com/spring-guides/gs-spring-boot/tree/master/complete) to sit behind the reverse proxy. This runs on localhost on my host machine , not a docker container , on port 8080.
+1. Security Access Manager protects applications , I've used this as sample [application](https://github.com/spring-guides/gs-spring-boot/tree/master/complete) to sit behind the reverse proxy. This runs on my host machine , not a docker container , on port 8080.
 
 [![Step 1](https://res.cloudinary.com/dnrfrgcar/image/upload/v1589628519/SAM-thumbnail_ptkpgo.png )](http://www.youtube.com/watch?v=chhJCSivNnM "Step 1")
 
