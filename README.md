@@ -43,9 +43,10 @@ manual configuration but might be useful for non Trial versions of the product.
 [![Step 4](https://res.cloudinary.com/dnrfrgcar/image/upload/v1589637467/Screenshot_2020-05-16_at_14.57.18_hv94bz.png)](https://youtu.be/kne8zdncOsw "Step 4")
 
 
-5. Navigate to https://localhost/isam-test , you should receive the ISAM login page,  use the sec_master user and credentials to login and it should take you to the Spring boot.  
+5. Navigate to https://localhost/isam-test , you should receive the ISAM reverse proxy default login page,  use the sec_master user and credentials to login to Spring boot appliation.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3xUtH6UcyIA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Step 5](https://res.cloudinary.com/dnrfrgcar/image/upload/v1589639237/Screenshot_2020-05-16_at_15.26.56_eezbvw.png)](https://youtu.be/3xUtH6UcyIA "Step 5")
+
 
  
 
