@@ -40,7 +40,7 @@ manual configuration but might be useful for non Trial versions of the product.
 
 [![Step 1](https://res.cloudinary.com/dnrfrgcar/image/upload/v1589628519/SAM-thumbnail_ptkpgo.png )](http://www.youtube.com/watch?v=chhJCSivNnM "Step 1")
 
-2. Start the ISAM containers . Navigate to the docker directory and run `./start-isam.sh`
+2. Start the ISAM containers . Clone this repo , navigate to the docker directory and run `./start-isam.sh`
 
 [![Step 2](https://res.cloudinary.com/dnrfrgcar/image/upload/v1589635988/Screenshot_2020-05-16_at_14.32.33_ovfczk.png)](https://youtu.be/gIDX8AkmT_A "Step 2")
 
