@@ -1,4 +1,4 @@
-# Setting up an ISAM development lab
+# Setting up an IBM Security Access Manager development lab
 This repository contains instructions to standup an IBM security access manager webseal docker instance.
 Trial licence acceptance manually through the LMI but the runtime and reverse proxy configuration is performed using 
 the IBM ISAM ansible roles.
@@ -12,8 +12,9 @@ I use a default passwords in this demo lab and LDAP is running on a plaintext po
 
 
 ## Before you start
-- Ensure docker is installed
-- The scripts and docker-compose file require access to write to the /tmp directory
+- Ensure docker is installed on the host machine
+- Ansible in installed is installed on the host machine
+
 
 <aside class="notice">
 This setup for the moment only works with MacOS, Linux version coming soon. 
