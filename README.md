@@ -20,12 +20,16 @@ manual configuration but might be useful for non Trial versions of the product.
 - ***runtime-config.json*** The configuration needed to use the embedded ldap for the runtime config.
 
 ## Getting Started
-1. Security Access Manager protects applications , I've used this as sample [application](https://github.com/spring-guides/gs-spring-boot/tree/master/complete) to sit behind the reverse proxy. This runs on localhost on my host machine not a docker container on port 8080.
+1. Security Access Manager protects applications , I've used this as sample [application](https://github.com/spring-guides/gs-spring-boot/tree/master/complete) to sit behind the reverse proxy. This runs on localhost on my host machine , not a docker container , on port 8080.
 
-[![Part 1](https://res.cloudinary.com/dnrfrgcar/image/upload/v1589628519/SAM-thumbnail_ptkpgo.png )](http://www.youtube.com/watch?v=chhJCSivNnM "Part 1")
-
+[![Step 1](https://res.cloudinary.com/dnrfrgcar/image/upload/v1589628519/SAM-thumbnail_ptkpgo.png )](http://www.youtube.com/watch?v=chhJCSivNnM "Step 1")
 
 2. Start the ISAM containers . Navigate to the docker directory and run `./start-isam.sh`
+
+[![Step 2](https://res.cloudinary.com/dnrfrgcar/image/upload/v1589635988/Screenshot_2020-05-16_at_14.32.33_ovfczk.png)](https://youtu.be/gIDX8AkmT_A "Step 2")
+
+
+
 3. This should start the ISAM configuration appliance [login page ](https://localhost:9443/core/login). The default username is ***admin*** and password is ***admin***. It also starts a webseal container but that remains in an unhealthy state until the configuration container publishes the reverse proxy config to the shared volumes. 
 ![ISAM Login Page](/images/isam-login.png )
 4. You'll need to download a Trial licence from IBM and activate it within the appliance.
