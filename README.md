@@ -1,10 +1,8 @@
 # Setting up an ISAM development lab
-This repo contains the bare minimum needed to start up an ISAM docker webseal instance using a Trial licence.
-I left passwords in plaintext for ease of install , I recommend you change these values or customize this
-script to use ansible vault or your own secrets management solution.
-Once the licence agreements are accepted and applied , the ansible script supplied with this repo configures
-a runtime based on an embedded ldap, a default webseal instance and configures a test junction. 
-The junction at this point is configured with a docker platform specific host.
+This repository contains instructions to standup an IBM security access manager webseal docker instance.
+Trial licence acceptance manually through the LMI but the runtime and reverse proxy configuration is performed using 
+the IBM ISAM ansible roles.
+
 
 ## Docker Directory
 The docker directory contains the following files
@@ -23,6 +21,11 @@ manual configuration but might be useful for non Trial versions of the product.
 
 ## Getting Started
 1. Security Access Manager protects applications , I've used this as sample [application](https://github.com/spring-guides/gs-spring-boot/tree/master/complete) to sit behind the reverse proxy. This runs on localhost on my host machine (not a docker container) on port 8080.
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=chhJCSivNnM" target="_blank"><img src="/images/thumbnail.png" 
+alt="Part 1" width="240" height="180" border="10" /></a>
+
+
 2. Start the ISAM containers . Navigate to the docker directory and run `./start-isam.sh`
 3. This should start the ISAM configuration appliance [login page ](https://localhost:9443/core/login). The default username is ***admin*** and password is ***admin***. It also starts a webseal container but that remains in an unhealthy state until the configuration container publishes the reverse proxy config to the shared volumes. 
 ![ISAM Login Page](/images/isam-login.png )
