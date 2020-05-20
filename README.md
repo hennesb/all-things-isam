@@ -12,7 +12,7 @@ I use a default passwords in this demo lab and LDAP is running on a plaintext po
 
 
 ## Before you start
-- Ensure docker and docker compose installed on the host machine
+- Ensure docker and docker compose are installed on the host machine
 - Ansible in installed is installed on the host machine
 
 
