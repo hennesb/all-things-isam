@@ -16,9 +16,16 @@
     add_junction_junction_point: '/isam-test'
     add_junction_junction_type: 'tcp'
     add_junction_reverseproxy_id: 'default'
-    add_junction_server_hostname: 'docker.for.mac.host.internal'
     add_junction_server_port: '8080'
     add_junction_remote_http_header : 'all'
+
+  include_vars:
+    file: linux.yaml
+  when: ansible_distribution == 'Ubuntu'
+
+  include_vars:
+    file: macos.yaml
+  when: ansible_distribution == 'MacOSX'
 
   pre_tasks:
     - uri:
