@@ -12,8 +12,9 @@ I use a default passwords in this demo lab and LDAP is running on a plaintext po
 
 
 ## Before you start
-- Ensure docker and docker compose are installed on the host machine
-- Ansible in installed is installed on the host machine
+- Ensure docker , docker compose and ansible are installed on the host machine.
+- If you're using the vagrant image these will be installed on the `vagrant up` command
+
 
 
 <aside class="notice">
