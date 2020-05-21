@@ -13,6 +13,7 @@ I use a default passwords in this demo lab and LDAP is running on a plaintext po
 
 ## Before you start
 - Ensure docker , docker compose and ansible are installed on the host machine.
+- Install the IBM security Python packages `pip install ibmsecurity` . 
 - If you're using the vagrant image these will be installed on the `vagrant up` command
 
 
