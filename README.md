@@ -80,7 +80,7 @@ manual configuration but might be useful for non Trial versions of the product.
 3. When the vagrant vm is provisioned issue a `vagrant ssh`
 4. In the home directory /home/vagrant you should find the repo in the ***all-things-isam*** directory
 5. `cd /home/vagrant/all-things-isam/docker` and then issue `sudo ./start-isam.sh` . This will start the isam and ldap containers.
-6. Install the Trial licence by following the same steps and the MacOS instructions 
+6. Install the Trial licence by following the same steps from the MacOS instructions. Youtube video is below.
    [![Step 3](/images/isam-login.png )](https://youtu.be/DDjX1yKlc7I "Step 3")
 7. Within the vagrant vm , `cd /home/vagrant/all-things-isam/ansible` from here issue `sudo ./apply-config.sh`
 8. Navigate to https://localhost/isam-test , you should receive the ISAM reverse proxy default login page,  use the sec_master user and credentials to login to  the Spring boot appliation.
