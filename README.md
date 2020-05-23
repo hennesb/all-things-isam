@@ -1,7 +1,13 @@
 # Setting up an IBM Security Access Manager development lab
 This repository contains instructions to standup an IBM security access manager webseal docker instance.
-Trial licence acceptance manually through the LMI but the runtime and reverse proxy configuration is performed using 
-the IBM ISAM ansible roles.
+Trial licence acceptance is performed manually through the LMI but the runtime and reverse proxy configurations are performed using 
+the IBM Security Access Manager ansible roles. Outcomes I hope to achieve with this repo are
+
+- a development environment where webseal acts a reverse proxy to your application
+- use the ISAM REST APIs against your own dedicated environment
+- demonstrate ansible working with IBM 
+- connect to the OpenLDAP registry using Apache Directory Studio
+
 
 <aside class="warning">
 I use a default passwords in this demo lab and LDAP is running on a plaintext port of 389. All passwords are admin. Usual warnings , please change these for your environment. 
@@ -14,12 +20,12 @@ I use a default passwords in this demo lab and LDAP is running on a plaintext po
 ## Before you start
 - Ensure docker , docker compose and ansible are installed on the host machine.
 - Install the IBM security Python packages `pip install ibmsecurity` . 
-- If you're using the vagrant image these will be installed on the `vagrant up` command
+- If you're using the vagrant image all the pre-requisite software will be installed on the `vagrant up` command
 
 
 
 <aside class="notice">
-This setup for the moment only works with MacOS, Linux version coming soon. 
+This video instructions below are for MacOS, the vagrant instructions (Linux) are coming soon.
 
 </aside>
 
