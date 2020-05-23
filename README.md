@@ -68,9 +68,24 @@ manual configuration but might be useful for non Trial versions of the product.
 [![Step 4](https://res.cloudinary.com/dnrfrgcar/image/upload/v1589637467/Screenshot_2020-05-16_at_14.57.18_hv94bz.png)](https://youtu.be/kne8zdncOsw "Step 4")
 
 
-5. Navigate to https://localhost/isam-test , you should receive the ISAM reverse proxy default login page,  use the sec_master user and credentials to login to Spring boot appliation.
+5. Navigate to https://localhost/isam-test , you should receive the ISAM reverse proxy default login page,  use the sec_master user and credentials to login to the Spring boot appliation.
 
 [![Step 5](https://res.cloudinary.com/dnrfrgcar/image/upload/v1589639237/Screenshot_2020-05-16_at_15.26.56_eezbvw.png)](https://youtu.be/3xUtH6UcyIA "Step 5")
+
+
+
+## Getting Started with IBM Security Access Manager with Linux running in Vagrant
+1. Download the repo and navigate to the vagrant directory. 
+2. Issue `vagrant up` . This will provision an Ubuntu18 OS , install docker , docker-compose, ansible and the ibmsecurity python dependencies.
+3. When the vagrant vm is provisioned issue a `vagrant ssh`
+4. In the home directory /home/vagrant you should find the repo in the ***all-things-isam*** directory
+5. `cd /home/vagrant/all-things-isam/docker` and then issue `sudo ./start-isam.sh` . This will start the isam and ldap containers.
+6. Install the Trial licence by following the same steps and the MacOS instructions 
+   [![Step 3](/images/isam-login.png )](https://youtu.be/DDjX1yKlc7I "Step 3")
+7. Within the vagrant vm , `cd /home/vagrant/all-things-isam/ansible` from here issue `sudo ./apply-config.sh`
+8. Navigate to https://localhost/isam-test , you should receive the ISAM reverse proxy default login page,  use the sec_master user and credentials to login to  the Spring boot appliation.
+
+### This may run on Windows10 but I have not tested it yet.
 
 
  
