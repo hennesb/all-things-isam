@@ -1,48 +1,11 @@
 - name: Apply Common Configuration to all Appliances
   hosts: localhost
   connection: local
-  gather_facts: no
-  vars:
-    username : "admin"
-    password: "admin"
-    force : "N"
-    log_level : "DEBUG"
-    lmi_port : "9443"
-    create_reverseproxy_admin_id  : "sec_master"
-    create_reverseproxy_admin_pwd : "admin"
-    create_reverseproxy_host      : "localhost"
-    create_reverseproxy_inst_name : "default"
-    create_reverseproxy_listening_port : "443"
-    add_junction_junction_point: '/isam-test'
-    add_junction_junction_type: 'tcp'
-    add_junction_reverseproxy_id: 'default'
-    add_junction_server_hostname: 'docker.for.mac.host.internal'
-    add_junction_server_port: '8080'
+  gather_facts: true
+ 
 
   pre_tasks:
-    - uri:
-        url: https://localhost:9443/setup_service_agreements/accepted
-        user: "{{username}}"
-        password: "{{password}}"
-        method: PUT
-        status_code: 200
-        force_basic_auth: yes
-        body_format: json
-        body: "{{ lookup('file','accept_agreement.json') }}"
-        validate_certs: no
-        headers:
-          Accept: "application/json"
-
-    - uri:
-        url: https://localhost:9443/setup_complete
-        user: "{{username}}"
-        password: "{{password}}"
-        method: PUT
-        status_code: 200
-        force_basic_auth: yes
-        validate_certs: no
-        headers:
-          Accept: "application/json"
+    - include_vars: '{{ ansible_distribution }}.yml'
 
     - uri:
         url: https://localhost:9443/isam/runtime_components

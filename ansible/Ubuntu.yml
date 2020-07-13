@@ -1,0 +1,16 @@
+username : "admin"
+password: "admin"
+force : "N"
+log_level : "DEBUG"
+lmi_port : "9443"
+create_reverseproxy_admin_id  : "sec_master"
+create_reverseproxy_admin_pwd : "admin"
+create_reverseproxy_host      : "localhost"
+create_reverseproxy_inst_name : "default"
+create_reverseproxy_listening_port : "443"
+add_junction_junction_point: '/isam-test'
+add_junction_junction_type: 'tcp'
+add_junction_reverseproxy_id: 'default'
+add_junction_server_port: '8080'
+add_junction_remote_http_header : 'all'
+add_junction_server_hostname: '10.0.2.2'
